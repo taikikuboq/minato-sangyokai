@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+body{
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic"; color: #333;
+  line-height: 1.95;
+  letter-spacing: 0.09em;
+  text-align: justify;
+}
+
+.button{
+  background: #F198AB;
+}
+
+.button:focus, .button:hover{
+  background: #E18C8C;
+}
+
+main{
+  margin-bottom: 3rem;
+}
+
+
+@media screen and (min-width: 40em){
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.375rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: .09em;
+}
+}
+ul {
+    list-style-position: inside;
+}
+
+/* flexibility.js */
+
+.cell,.grid-x{
+  -js-display: flex;
+}
+
+/* header */
+
+.main-logo img{
+  padding: 1em;
+}
+
+.header-address{
+  background: #ccc;
+  padding: .5em;
+  font-weight: normal;
+  line-height: 1.2em;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.header-address span{
+  float: left;
+}
+.header-address p{
+  margin-bottom: 0;
+  font-size: .8em;
+font-style: normal;
+float: right;
+}
+
+.map-links{
+  margin-top: .2em;
+  margin-right: .5em;
+  transition: all .25s ease-out;
+}
+.map-links:hover>*{
+  opacity: .5;
+}
+header .map-links>a{
+  padding: 0;
+color: #fff;
+}
+
+/* nav */
+
+nav.top-bar{
+
+}
+
+nav.top-bar ul{
+  margin-bottom: 0;
+}
+
+nav.top-bar li{
+transition: all .25s ease-out;
+}
+
+nav.top-bar li>a{
+  font-weight: bold;
+  color: #3b929b;
+  font-size: .85em;
+  line-height: 1.6;
+}
+nav.top-bar li:hover{
+  background:  #358289;
+}
+
+nav.top-bar li:hover>a{
+  color: #fff;
+}
+
+nav.top-bar li.is-active{
+  background:  #3b929b;
+  position: relative;
+}
+@media screen and (min-width: 40em){
+  nav.top-bar li.is-active:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #3b929b;
+    right: 50%;
+    bottom: -.5em;
+    position: absolute;
+  }
+}
+
+
+nav.top-bar li.is-active>a{
+  color: #fff;
+}
+
+/*orbit*/
+.orbit-bullets button{
+  width: .8rem;
+  height: .8rem;
+}
+/* news */
+.news-title{
+  border-left: .4em solid #3b929b;
+  padding-left: .4em;
+  margin-bottom: .8em;
+  color: #3b929b;
+}
+/* card */
+.main-links .cell{
+  display: flex;
+  align-items: stretch;
+}
+
+.card-divider > h2{
+  padding-left: 1.7rem;
+}
+
+.main-links .card-section{
+  padding-bottom: 1em;
+}
+
+.card-section p{
+  min-height: 5em;
+}
+/* article */
+
+h2.title{
+
+}
+
+h2.title small{
+  color: #555;
+  line-height: 0;
+  padding-left: .5em;
+  vertical-align: middle;
+}
+
+h2.title+p{
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0;
+}
+
+section{
+  overflow: auto;
+}
+section::after{
+  content: "";
+  display: table-cell;
+  clear: both;
+  visibility: hidden;
+}
+
+section+section{
+  margin-top: 1em;
+}
+
+.content-wrap h3{
+  font-weight: bold;
+  color: #90C7CA;
+}
+@media screen and (min-width: 40em){
+  .content-wrap h3{
+    background: linear-gradient(transparent 70%, #90C7CA 70%);
+    color: inherit;
+    font-weight: normal;
+  }
+}
+.content-wrap dl{
+  margin-left: 1em;
+}
+
+.content-wrap dt{
+    margin-top: .3rem;
+}
+
+.org-address dl{
+  margin-left: 0;
+  font-style: normal;
+  overflow: auto;
+}
+.org-address dl::after{
+  content: "";
+  display: table-cell;
+  clear: both;
+  visibility: hidden;
+}
+.org-address dt,.org-address dd{
+  display: inline-block;
+  float: left;
+}
+.org-address dd+dt{
+  clear: left;
+}
+.org-address dt{
+  margin-right: 1rem;
+}
+.org-address dd{
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+/* card */
+
+.card{
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 1em;
+  padding: 0;
+}
+
+.card-divider{
+  box-shadow: 0 1px 3px #ddd;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: .5em 0 .2em;
+  background: #3b929b;
+  color: #eee;
+}
+
+.card-section{
+  padding: 0 1.7em;
+}
+
+/* footer */
+footer h4{
+  color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}footer h5{
+  font-size: 1.0625rem;
+}
+footer ul{
+  list-style: none;
+  padding-right: 1em;
+  font-size: .9em;
+}
+footer ul>li{
+  padding-bottom: .3em;
+}
+
+footer a:focus,footer a:hover{
+  text-decoration: underline;
+}
+
+.footer-address{
+  background: #fff;
+    border-radius: 4px;
+    padding: 1em;
+    text-align: right;
+}
+.footer-address>address{
+  font-style: normal;
+font-weight: bold;
+display: inline-block;
+padding: 0.85em;
+vertical-align: top;
+}
+
+.footer-address .button{
+  margin-bottom: auto;
+      margin-left: 1em;
+}

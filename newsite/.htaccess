@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "IDpass"
+AuthUserFile /home/users/web01/0/2/0092920/www.minato-sangyokai.jp/newsite/.htpasswd
+Require valid-user
+#= 115c4535fc324bb332346fc40fe31ba2
