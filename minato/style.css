@@ -285,51 +285,6 @@ section+section{
   }
 
 }
-
-/* archive */
-.page-nation a{
-  display: inline-block;
-  border: 1px solid #2199e8;
-  padding: .6em 0.75em;
-  line-height: 1em;
-  transition: all .3s;
-  box-sizing: border-box;
-  margin-right: .5em;
-  margin-bottom: .5em;
-  }
-
-
-.page-nation a:cover,a.current{
-  background:#2199e8;
-  color:#fff;
-}
-
-.side-bar{
-  margin-left: 1em;
-}
-
-.side-bar dt,
-.side-bar dd{
-  font-size: 80%;
-  color:#333;
-}
-.side-bar dt>ul,
-.side-bar dd>ul{
-  list-style: none;
-  text-indent: 1em;
-}
-
-.side-bar dt a,
-.side-bar dd a{
-  color:inherit;
-}
-
-.side-bar dt a:hover,
-.side-bar dd a:hover{
-  color:#666;
-  text-decoration: underline;
-}
-
 /* footer */
 footer h4{
   color: #555;
